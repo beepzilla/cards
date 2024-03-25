@@ -459,3 +459,27 @@ html,body,main {
     transform: scale3d(1, 1, 1);
   }
 }
+
+
+.coin {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('path_to_your_coin_image.png'); /* Change to your coin image URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    animation: dropCoin 3s linear infinite;
+}
+
+@keyframes dropCoin {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(300px); /* Adjust based on your card size */
+    }
+}
+
