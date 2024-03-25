@@ -472,6 +472,16 @@ html,body,main {
     animation: dropCoin 3s linear infinite;
 }
 
+.coin-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: visible;
+}
+
+
 @keyframes dropCoin {
     0% {
         opacity: 1;
