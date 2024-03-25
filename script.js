@@ -63,3 +63,26 @@ $cards
       $card.addClass("animated");
     },2500);
   });
+
+const cardEmitRates = {
+    'common': 3000,
+    'odd': 2500,
+    'rare': 2000,
+    'ultrarare': 1500,
+    'god': 1000,
+    'kek': 500
+};
+
+function emitCoin(cardType, container) {
+    const coin = document.createElement('div');
+    coin.className = 'coin';
+    container.appendChild(coin);
+    setTimeout(() => container.removeChild(coin), 3000); // Remove coin after animation
+}
+
+document.querySelectorAll('.card').forEach(card => {
+    const container = card.querySelector('.coin-container');
+    const cardType = card.classList[1];
+    setInterval(() => emitCoin(cardType, container), cardEmitRates[cardType]);
+});
+
