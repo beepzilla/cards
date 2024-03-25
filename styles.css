@@ -463,14 +463,17 @@ html,body,main {
 
 .coin {
     position: absolute;
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png');
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    background-image: url('your-coin-image-url');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
     animation: dropCoin 3s linear infinite;
+    left: 50%; /* Center the coin horizontally */
+    transform: translateX(-50%); /* Adjust horizontal position */
 }
+
 
 
 .coin-container {
