@@ -78,13 +78,13 @@ function emitCoin(cardType, container) {
     coin.className = 'coin';
     container.appendChild(coin);
 
-    let animationDuration = '3s';
+    let animationDuration = '5s'; // Default duration
     if (cardType === 'common') {
-        animationDuration = '5s'; // Slower fall for common
+        animationDuration = '7s'; // Slower fall for common
     } else if (cardType === 'kek') {
-        animationDuration = '2s'; // Faster fall for kek
+        animationDuration = '3s'; // Faster fall for kek
     }
-    coin.style.animation = `dropCoin ${animationDuration} linear infinite`;
+    coin.style.animation = `dropCoin ${animationDuration} linear`;
 
     setTimeout(() => container.removeChild(coin), parseFloat(animationDuration) * 1000); // Remove coin after animation
 }
