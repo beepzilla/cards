@@ -22,6 +22,14 @@
   --kekfront: url(https://ipfs.io/ipfs/QmZ2A2ACNuxBFGrgPt5KU5gAygGAREUBsJj22Y34SPUW27/keke.png);
 }
 
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+}
+body {
+    font-family: 'Press Start 2P', cursive;
+}
+
+
 .card {
   width: 60vw;
   height: 85vw;
