@@ -38,6 +38,7 @@ body {
     height: clamp(15vw, 70vh, 21vw);
   }
   position: relative;
+  z-index: 10; /* Ensure the card is above the coins */
   overflow: hidden;
   margin: 15px;
   z-index: 10;
@@ -487,21 +488,21 @@ html,body,main {
 .coin-container {
     position: absolute;
     width: 100%;
-    bottom: -100%; /* Start from below the card */
+    height: 100%;
+    top: 100%; /* Start from the bottom of the card */
     left: 0;
     overflow: visible;
-    z-index: 11; /* Higher than the card's z-index */
+    z-index: 1; /* Lower than the card */
 }
 
 
 @keyframes dropCoin {
     0% {
         opacity: 1;
-        transform: translateY(0%); /* Start from the bottom of the card */
+        transform: translateY(0); /* Start from the top of the coin-container */
     }
     100% {
         opacity: 0;
-        transform: translateY(100vh); /* Travel the full height of the viewport */
+        transform: translateY(calc(100vh - 100%)); /* Move to the bottom of the viewport */
     }
 }
-
