@@ -463,14 +463,15 @@ html,body,main {
 
 .coin {
     position: absolute;
-    width: 20px;
-    height: 20px;
-    background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png'); /* Change to your coin image URL */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
     animation: dropCoin 3s linear infinite;
 }
+
 
 .coin-container {
     position: absolute;
@@ -485,11 +486,11 @@ html,body,main {
 @keyframes dropCoin {
     0% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateY(50%); /* Start from halfway down the card */
     }
     100% {
         opacity: 0;
-        transform: translateY(300px); /* Adjust based on your card size */
+        transform: translateY(500px); /* Increase the distance of the fall */
     }
 }
 
