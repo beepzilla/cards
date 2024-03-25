@@ -480,17 +480,17 @@ html,body,main {
     top: 0;
     left: 0;
     overflow: visible;
+    z-index: 100; /* Increase z-index */
 }
-
 
 @keyframes dropCoin {
     0% {
         opacity: 1;
-        transform: translateY(50%); /* Start from halfway down the card */
+        transform: translateY(0%); /* Start from the top of the card */
     }
     100% {
         opacity: 0;
-        transform: translateY(500px); /* Increase the distance of the fall */
+        transform: translateY(100vh); /* Travel the full height of the viewport */
     }
 }
 
