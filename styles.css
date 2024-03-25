@@ -10,26 +10,33 @@
   --oddfront: url(https://ipfs.io/ipfs/QmYVXc8kUUyEJ65d2vrgLJLUgoHpLi5eKarQpZHVK1AfJe/Untitled%20(1).png);
   --rare1: #efb2fb;
   --rare2: #acc6f8;
-  --rarefront: url(https://ipfs.io/ipfs/QmYVXc8kUUyEJ65d2vrgLJLUgoHpLi5eKarQpZHVK1AfJe/Untitled%20(1).png);
+  --rarefront: url(https://assets.codepen.io/13471/eevee-gx.webp);
   --ultrarare1: #efb2fb;
   --ultrarare2: #acc6f8;
-  --ultrararefront: url(https://ipfs.io/ipfs/QmYVXc8kUUyEJ65d2vrgLJLUgoHpLi5eKarQpZHVK1AfJe/Untitled%20(1).png);
+  --ultrararefront: url(https://assets.codepen.io/13471/mewtwo-gx.webp);
   --god1: #ec9bb6;
   --god2: #ccac6f;
-  --godfront: url(https://ipfs.io/ipfs/QmYVXc8kUUyEJ65d2vrgLJLUgoHpLi5eKarQpZHVK1AfJe/Untitled%20(1).png);
+  --godfront: url(https://assets.codepen.io/13471/eevee-gx.webp);
   --kek1: #69e4a5;
   --kek2: #8ec5d6;
-  --kekfront: url(https://ipfs.io/ipfs/QmYVXc8kUUyEJ65d2vrgLJLUgoHpLi5eKarQpZHVK1AfJe/Untitled%20(1).png);
+  --kekfront: url(https://assets.codepen.io/13471/eevee-gx.webp);
 }
 
+
 .card {
-  /* Other styles remain the same */
-  background-color: #040712; /* Default background color */
-  background-image: var(--front);
-  background-size: contain; /* Change from 'cover' to 'contain' */
-  background-repeat: no-repeat;
-  background-position: center center; /* Center the image */
-}
+
+  width: 71.5vw;
+  height: 100vw;
+    // width: clamp(200px, 61vh, 18vw);
+    // height: clamp(280px, 85vh, 25.2vw);
+  @media screen and (min-width: 600px) {
+    // width: 61vh;
+    // height: 85vh;
+    // max-width: 500px;
+    // max-height: 700px;
+    width: clamp(12.9vw, 61vh, 18vw);
+    height: clamp(18vw, 85vh, 25.2vw);
+  }
   
   position: relative;
   overflow: hidden;
