@@ -77,8 +77,18 @@ function emitCoin(cardType, container) {
     const coin = document.createElement('div');
     coin.className = 'coin';
     container.appendChild(coin);
-    setTimeout(() => container.removeChild(coin), 3000); // Remove coin after animation
+
+    let animationDuration = '3s';
+    if (cardType === 'common') {
+        animationDuration = '5s'; // Slower fall for common
+    } else if (cardType === 'kek') {
+        animationDuration = '2s'; // Faster fall for kek
+    }
+    coin.style.animation = `dropCoin ${animationDuration} linear infinite`;
+
+    setTimeout(() => container.removeChild(coin), parseFloat(animationDuration) * 1000); // Remove coin after animation
 }
+
 
 document.querySelectorAll('.card').forEach(card => {
     const container = card.querySelector('.coin-container');
