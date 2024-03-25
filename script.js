@@ -73,22 +73,22 @@ const cardEmitRates = {
     'kek': 500
 };
 
+const coinAnimationDuration = {
+    'common': '5s',
+    'odd': '4s',
+    'rare': '3s',
+    'ultrarare': '2.5s',
+    'god': '2s',
+    'kek': '1.5s'
+};
+
 function emitCoin(cardType, container) {
     const coin = document.createElement('div');
     coin.className = 'coin';
+    coin.style.animation = `dropCoin ${coinAnimationDuration[cardType]} linear infinite`;
     container.appendChild(coin);
-
-    let animationDuration = '5s'; // Default duration
-    if (cardType === 'common') {
-        animationDuration = '7s'; // Slower fall for common
-    } else if (cardType === 'kek') {
-        animationDuration = '3s'; // Faster fall for kek
-    }
-    coin.style.animation = `dropCoin ${animationDuration} linear`;
-
-    setTimeout(() => container.removeChild(coin), parseFloat(animationDuration) * 1000); // Remove coin after animation
+    setTimeout(() => container.removeChild(coin), 3000); // Remove coin after animation
 }
-
 
 document.querySelectorAll('.card').forEach(card => {
     const container = card.querySelector('.coin-container');
