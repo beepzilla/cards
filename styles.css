@@ -22,29 +22,18 @@
   --kekfront: url(https://ipfs.io/ipfs/QmZ2A2ACNuxBFGrgPt5KU5gAygGAREUBsJj22Y34SPUW27/keke.png);
 }
 
-
 .card {
-
-  width: 71.5vw;
-  height: 100vw;
-    // width: clamp(200px, 61vh, 18vw);
-    // height: clamp(280px, 85vh, 25.2vw);
+  width: 60vw;
+  height: 85vw;
   @media screen and (min-width: 600px) {
-    // width: 61vh;
-    // height: 85vh;
-    // max-width: 500px;
-    // max-height: 700px;
-    width: clamp(12.9vw, 61vh, 18vw);
-    height: clamp(18vw, 85vh, 25.2vw);
+    width: clamp(10vw, 50vh, 15vw);
+    height: clamp(15vw, 70vh, 21vw);
   }
-  
   position: relative;
   overflow: hidden;
-  margin: 20px;
-  overflow: hidden;
+  margin: 15px;
   z-index: 10;
   touch-action: none;
-  
   border-radius: 5% / 3.5%;
   box-shadow: 
     -5px -5px 5px -5px var(--color1), 
@@ -53,17 +42,14 @@
     7px 7px 10px -5px transparent, 
     0 0 5px 0px rgba(255,255,255,0),
     0 55px 35px -20px rgba(0, 0, 0, 0.5);
-  
   transition: transform 0.5s ease, box-shadow 0.2s ease;
   will-change: transform, filter;
-  
   background-color: #040712;
   background-image: var(--front);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform-origin: center;
-  
 }
 
 .card:hover {
