@@ -469,40 +469,32 @@ html,body,main {
   }
 }
 
-
 .coin {
     position: absolute;
-    width: 50px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
-    background-image: url('your-coin-image-url');
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
+    background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
-    animation: dropCoin 3s linear infinite;
-    left: 50%; /* Center the coin horizontally */
-    transform: translateX(-50%); /* Adjust horizontal position */
 }
-
-
 
 .coin-container {
     position: absolute;
     width: 100%;
     height: 100%;
-    top: 100%; /* Start from the bottom of the card */
+    top: 0;
     left: 0;
     overflow: visible;
-    z-index: 1; /* Lower than the card */
 }
-
 
 @keyframes dropCoin {
     0% {
         opacity: 1;
-        transform: translateY(0); /* Start from the top of the coin-container */
+        transform: translateY(0); /* Start from the top of the card */
     }
     100% {
         opacity: 0;
-        transform: translateY(calc(100vh - 100%)); /* Move to the bottom of the viewport */
+        transform: translateY(500px); /* Increase the distance of the fall */
     }
 }
