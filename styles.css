@@ -377,8 +377,10 @@ p {
   perspective: 2000px;
   position: relative;
   z-index: 1;
-  transform: translate3d(0.1px, 0.1px, 0.1px )
+  transform: translate3d(0.1px, 0.1px, 0.1px);
+  background-color: #150220; /* Match the body background color */
 }
+
 .demo {
   flex-direction: row;
   justify-content: center;
