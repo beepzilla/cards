@@ -471,8 +471,8 @@ html,body,main {
 
 .coin {
     position: absolute;
-    width: 150px; /* Adjust the size as needed */
-    height: 150px; /* Adjust the size as needed */
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Adjust the size as needed */
     background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
@@ -496,7 +496,7 @@ html,body,main {
         transform: translateY(0); /* Start from the top of the card */
     }
     100% {
-        opacity: 0;
+        opacity: 1;
         transform: translateY(300px); /* Increase the distance of the fall */
     }
 }
