@@ -64,39 +64,4 @@ $cards
     },2500);
   });
 
-const cardEmitRates = {
-    'common': 3000,
-    'odd': 2500,
-    'rare': 2000,
-    'ultrarare': 1500,
-    'god': 1000,
-    'kek': 100
-};
-
-const coinAnimationDuration = {
-    'common': '4s',
-    'odd': '4s',
-    'rare': '4s',
-    'ultrarare': '4s',
-    'god': '4s',
-    'kek': '4s'
-};
-
-function emitCoin(cardType, card) {
-    const coin = document.createElement('div');
-    coin.className = 'coin';
-    // Set the initial position of the coin to be at the bottom of the card
-    const cardRect = card.getBoundingClientRect();
-    coin.style.top = `${cardRect.bottom}px`;
-    coin.style.left = `${cardRect.left + card.offsetWidth / 2 - 50}px`; // Adjust the left position to center the coin
-    coin.style.animation = `dropCoin ${coinAnimationDuration[cardType]} linear`;
-
-    document.body.appendChild(coin); // Append the coin to the body so it can move freely
-    setTimeout(() => document.body.removeChild(coin), parseInt(coinAnimationDuration[cardType]) * 1000); // Remove coin after animation
-}
-
-document.querySelectorAll('.card').forEach(card => {
-    const cardType = card.classList[1];
-    setInterval(() => emitCoin(cardType, card), cardEmitRates[cardType]);
-});
 
