@@ -482,8 +482,9 @@ html,body,main {
   text-align: center;
   bottom: -80px; /* Adjust as needed */
   pointer-events: none; /* Prevent the text from blocking card hover */
-  z-index: 100000000
+  z-index: 11; /* Changed from 100000000 to 11 */
 }
+
 
 .card:hover .card-text {
   text-shadow: 0 0 15px rgba(255, 255, 255, 1);
