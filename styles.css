@@ -475,18 +475,17 @@ html,body,main {
   font-family: 'Press Start 2P', cursive;
   color: white;
   text-shadow: 0 0 5px rgba(0, 0, 0, 0);
-  transition: text-shadow 0.5s ease;
+  transition: text-shadow 0.5s ease, opacity 0.5s ease;
   opacity: 0;
-  transition: opacity 0.5s ease;
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: -30px; /* Adjust as needed */
+  bottom: -40px; /* Adjust as needed */
+  pointer-events: none; /* Prevent the text from blocking card hover */
 }
 
 .card:hover .card-text {
   text-shadow: 0 0 15px rgba(255, 255, 255, 1);
   opacity: 1;
 }
-
 
