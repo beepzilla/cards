@@ -479,10 +479,10 @@ html,body,main {
   position: absolute;
   width: 100%;
   text-align: center;
-  bottom: -20px; /* Adjusted top position */
+  top: -20px; /* Adjusted top position */
   pointer-events: none; /* Prevent the text from blocking card hover */
   z-index: 11; /* Ensure the text is above the card */
-  font-size: 2em; /* Increased font size */
+  font-size: 1.3em; /* Increased font size */
 }
 
 .card:hover .card-text {
