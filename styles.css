@@ -471,13 +471,15 @@ html,body,main {
 
 .coin {
     position: absolute;
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
     background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png');
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0;
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out; /* Adjust the fading duration as needed */
 }
+
 
 .coin-container {
     position: absolute;
