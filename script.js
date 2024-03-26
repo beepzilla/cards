@@ -70,7 +70,7 @@ const cardEmitRates = {
     'rare': 2000,
     'ultrarare': 1500,
     'god': 1000,
-    'kek': 500
+    'kek': 100
 };
 
 const coinAnimationDuration = {
@@ -79,7 +79,7 @@ const coinAnimationDuration = {
     'rare': '3s',
     'ultrarare': '2.5s',
     'god': '2s',
-    'kek': '1.5s'
+    'kek': '0.5s'
 };
 
 function emitCoin(cardType, card) {
