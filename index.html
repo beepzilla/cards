@@ -7,6 +7,28 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
+    <style>
+        .image-bullet-container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 20px auto;
+        }
+
+        .bullet-box {
+            flex-grow: 1;
+            margin-left: 20px;
+            padding: 20px;
+            background-color: #222;
+            color: #fff;
+            border-radius: 10px;
+        }
+
+        .bullet-box ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+    </style>
 </head>
 <body>
     <main id="app">
@@ -31,7 +53,18 @@
                 <div class="coin-container"></div>
             </div>
         </section>
-        <img src="https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png" alt="Card Image" style="display: block; margin: 20px auto; width: 20%;">
+        <div class="image-bullet-container">
+            <img src="https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png" alt="Card Image" style="width: 20%;">
+            <div class="bullet-box">
+                <ul>
+                    <li>Bullet point 1</li>
+                    <li>Bullet point 2</li>
+                    <li>Bullet point 3</li>
+                    <li>Bullet point 4</li>
+                    <li>Bullet point 5</li>
+                </ul>
+            </div>
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
