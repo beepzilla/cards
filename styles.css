@@ -469,34 +469,4 @@ html,body,main {
   }
 }
 
-.coin {
-    position: absolute;
-    width: 100px; /* Adjust the size as needed */
-    height: 100px; /* Adjust the size as needed */
-    background-image: url('https://ipfs.io/ipfs/QmPXWBiAoEFhnt5d4KYpcYG6AN7hJ1QN8j2SPxxo73dYKp/photo_2024-03-23_01-45-29-removebg-preview.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 1;
-    transition: opacity 0.5s ease-in-out; /* Adjust the fading duration as needed */
-}
 
-
-.coin-container {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    overflow: visible;
-}
-
-@keyframes dropCoin {
-    0% {
-        opacity: 1;
-        transform: translateY(0); /* Start from the top of the card */
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(300px); /* Increase the distance of the fall */
-    }
-}
