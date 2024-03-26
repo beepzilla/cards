@@ -38,10 +38,8 @@ body {
     height: clamp(15vw, 70vh, 21vw);
   }
   position: relative;
-  z-index: 10; /* Ensure the card is above the coins */
   overflow: hidden;
   margin: 15px;
-  z-index: 10;
   touch-action: none;
   border-radius: 5% / 3.5%;
   box-shadow: 
@@ -59,6 +57,7 @@ body {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   transform-origin: center;
+  z-index: 10; /* Ensure the card is above the background but below the text */
 }
 
 .card:hover {
@@ -471,6 +470,7 @@ html,body,main {
   }
 }
 
+
 .card-text {
   font-family: 'Press Start 2P', cursive;
   color: white;
@@ -480,14 +480,13 @@ html,body,main {
   position: absolute;
   width: 100%;
   text-align: center;
-  top: -20px; /* Adjusted top position */
+  top: 0; /* Changed from bottom: -80px; to top: 0; */
   pointer-events: none; /* Prevent the text from blocking card hover */
-  z-index: 9; /* Lower z-index when not hovered */
-  font-size: 1.2em; /* Increased font size */
+  z-index: 11; /* Ensure the text is above the card */
 }
 
 .card:hover .card-text {
   text-shadow: 0 0 15px rgba(255, 255, 255, 1);
   opacity: 1;
-  z-index: 9999; /* Higher z-index when hovered */
 }
+
