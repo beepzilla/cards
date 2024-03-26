@@ -490,3 +490,26 @@ html,body,main {
   opacity: 1;
 }
 
+.card-text-common {
+  color: brown;
+}
+
+.card-text-odd {
+  color: orange;
+}
+
+.card-text-rare {
+  color: purple;
+}
+
+.card-text-ultrarare {
+  color: green;
+}
+
+.card-text-god {
+  color: yellow;
+}
+
+.card-text-kek {
+  color: pink;
+}
