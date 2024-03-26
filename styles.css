@@ -482,11 +482,12 @@ html,body,main {
   text-align: center;
   top: -20px; /* Adjusted top position */
   pointer-events: none; /* Prevent the text from blocking card hover */
-  z-index: 11; /* Ensure the text is above the card */
+  z-index: 9; /* Lower z-index when not hovered */
   font-size: 1.2em; /* Increased font size */
 }
 
 .card:hover .card-text {
   text-shadow: 0 0 15px rgba(255, 255, 255, 1);
   opacity: 1;
+  z-index: 9999; /* Higher z-index when hovered */
 }
