@@ -74,12 +74,12 @@ const cardEmitRates = {
 };
 
 const coinAnimationDuration = {
-    'common': '5s',
+    'common': '4s',
     'odd': '4s',
-    'rare': '3s',
-    'ultrarare': '2.5s',
-    'god': '2s',
-    'kek': '0.5s'
+    'rare': '4s',
+    'ultrarare': '4s',
+    'god': '4s',
+    'kek': '4s'
 };
 
 function emitCoin(cardType, card) {
