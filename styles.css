@@ -350,7 +350,7 @@ html, body {
   transform: translate3d(0,0,0.1px);
 }
 body {
-  color: white;
+  color: #FF7034;
   background-color: #150220;
   font-family: "Heebo", sans-serif;
   text-align: center;
