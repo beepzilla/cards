@@ -24,14 +24,10 @@
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Press Start 2P', cursive;
-
-body {
-  color: #FF7034;
-  background-color: #150220;
-  font-family: 'Press Start 2P', cursive;
-  text-align: center;
 }
-
+body {
+    font-family: 'Press Start 2P', cursive;
+}
 
 
 .card {
