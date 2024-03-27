@@ -350,9 +350,9 @@ html, body {
   transform: translate3d(0,0,0.1px);
 }
 body {
-  color: #FF7034;
+  color: #FF5733;
   background-color: #150220;
-  font-family: "Heebo", sans-serif;
+  font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
 h1 {
