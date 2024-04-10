@@ -545,6 +545,15 @@ iframe {
         flex-direction: column; /* Stack items vertically on smaller screens */
     }
 
+    .image-bullet-container img {
+        border-radius: 50%; /* Make the image circular */
+        width: 60px; /* Adjust the width as needed */
+        height: 60px; /* Adjust the height as needed */
+        object-fit: cover; /* Optional: to ensure the image covers the circular area */
+    }
+}
+
+
     .iframe-container,
     .bullet-box {
         flex-basis: 100%; /* Take full width on smaller screens */
