@@ -350,7 +350,7 @@ html, body {
   transform: translate3d(0,0,0.1px);
 }
 body {
-  color: #ffb500;
+  color: #ffffff;
   background-color: #150220;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
@@ -362,7 +362,7 @@ h1 {
 h2 {
   display: block;
   margin: 10px 0;
-  color: #00ff00;
+  color: #ffffff;
 }
 
 p {
