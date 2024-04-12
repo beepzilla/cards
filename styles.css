@@ -492,7 +492,7 @@ html,body,main {
   top: 0; /* Adjusted top position */
   pointer-events: none; /* Prevent the text from blocking card hover */
   z-index: 11; /* Ensure the text is above the card */
-  font-size: 1.3em; /* Increased font size */
+  font-size: 1em; /* Increased font size */
 }
 
 .card:hover .card-text {
