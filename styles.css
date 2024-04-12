@@ -344,14 +344,14 @@ body {
 
 html, body {
   height: 100%;
-  background-color: #150220;
+  background-color: #000000;
   padding: 0;
   z-index: 1;
   transform: translate3d(0,0,0.1px);
 }
 body {
   color: #ffffff;
-  background-color: #150220;
+  background-color: #000000;
   font-family: 'Press Start 2P', cursive;
   text-align: center;
 }
@@ -383,7 +383,7 @@ p {
   position: relative;
   z-index: 1;
   transform: translate3d(0.1px, 0.1px, 0.1px);
-  background-color: #150220; /* Match the body background color */
+  background-color: #000000; /* Match the body background color */
 }
 
 .demo {
